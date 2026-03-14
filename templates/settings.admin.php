@@ -19,7 +19,7 @@ Util::addStyle(Application::APP_NAME, 'admin');
 
 ?>
 
-<div id="opensearch_search" class="section" style="display: none;">
+<div id="opensearch" class="section" style="display: none;">
 	<h2><?php p($l->t('OpenSearch')) ?></h2>
 
 	<!-- Status Panel -->

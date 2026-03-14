@@ -16,7 +16,7 @@ var opensearch_elements = {
 	opensearch_logger_enabled: null,
 
 	init: function () {
-		opensearch_elements.opensearch_div = $('#opensearch_search');
+		opensearch_elements.opensearch_div = $('#opensearch');
 		opensearch_elements.opensearch_host = $('#opensearch_host');
 		opensearch_elements.opensearch_index = $('#opensearch_index');
 		opensearch_elements.analyzer_tokenizer = $('#analyzer_tokenizer');
