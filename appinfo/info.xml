@@ -14,7 +14,7 @@ Extension to the _Full text search_ app to communicate with OpenSearch.
 
 ]]>
 	</description>
-	<version>1.0.0</version>
+	<version>0.0.1</version>
 	<licence>agpl</licence>
 	<author>Felix Oertel</author>
 	<namespace>FullTextSearch_OpenSearch</namespace>
