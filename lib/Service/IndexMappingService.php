@@ -238,7 +238,6 @@ class IndexMappingService {
 			'processors' => [
 				[
 					'attachment' => [
-						'remove_binary' => true,
 						'field' => 'content',
 						'indexed_chars' => -1,
 					],
