@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-  - SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+  - SPDX-FileCopyrightText: 2026 Felix Oertel
   - SPDX-License-Identifier: AGPL-3.0-or-later
 -->
 <info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -16,7 +16,7 @@ Extension to the _Full text search_ app to communicate with OpenSearch.
 	</description>
 	<version>1.0.0</version>
 	<licence>agpl</licence>
-	<author>Nextcloud contributors</author>
+	<author>Felix Oertel</author>
 	<namespace>FullTextSearch_OpenSearch</namespace>
 	<category>search</category>
 	<dependencies>

@@ -1,10 +1,10 @@
-# SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+# SPDX-FileCopyrightText: 2026 Felix Oertel
 # SPDX-License-Identifier: AGPL-3.0-or-later
 
 APP_NAME := fulltextsearch_opensearch
 
 .PHONY: all
-all: vendor
+all: vendor scoper lint
 
 .PHONY: vendor
 vendor: composer.json
@@ -13,10 +13,13 @@ vendor: composer.json
 
 .PHONY: scoper
 scoper: vendor
+	# Ensure minimum-stability allows dev dependencies (jetbrains/phpstorm-stubs)
+	mkdir -p vendor-bin/php-scoper
+	echo '{"minimum-stability":"dev","prefer-stable":true}' > vendor-bin/php-scoper/composer.json
 	# Install php-scoper via composer-bin-plugin
 	composer bin php-scoper require --dev humbug/php-scoper:^0.18.19
 	# Run php-scoper (outputs to lib/Vendor)
-	vendor-bin/php-scoper/vendor/bin/php-scoper add-prefix \
+	vendor-bin/php-scoper/vendor/humbug/php-scoper/bin/php-scoper add-prefix \
 		--config=scoper.inc.php \
 		--output-dir=lib/Vendor \
 		--force
@@ -28,7 +31,7 @@ clean:
 
 .PHONY: lint
 lint:
-	find lib/ -name "*.php" -exec php -l {} \;
+	find lib/ -name "*.php" -exec php -l {} \; 2>&1 | grep -v "^No syntax errors"
 
 .PHONY: cs
 cs:

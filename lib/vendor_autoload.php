@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * SPDX-FileCopyrightText: 2025 Nextcloud GmbH and Nextcloud contributors
+ * SPDX-FileCopyrightText: 2026 Felix Oertel
  * SPDX-License-Identifier: AGPL-3.0-or-later
  *
  * PSR-4 autoloader for scoped vendor dependencies.
