@@ -1,4 +1,10 @@
+<!--
+  - SPDX-FileCopyrightText: 2026 Felix Oertel
+  - SPDX-License-Identifier: AGPL-3.0-or-later
+-->
 # Full text search - OpenSearch Platform
+
+[![REUSE status](https://api.reuse.software/badge/github.com/foertel/fulltextsearch_opensearch)](https://api.reuse.software/info/github.com/foertel/fulltextsearch_opensearch)
 
 This is a platform provider extension for Nextcloud's [Full text search](https://github.com/nextcloud/fulltextsearch) framework that uses [OpenSearch](https://opensearch.org/) as the search backend.
 
