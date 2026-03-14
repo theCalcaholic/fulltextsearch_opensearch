@@ -31,7 +31,7 @@ clean:
 
 .PHONY: lint
 lint:
-	find lib/ -name "*.php" -exec php -l {} \; 2>&1 | grep -v "^No syntax errors"
+	! find lib/ -name "*.php" -exec php -l {} \; 2>&1 | grep -v "^No syntax errors"
 
 .PHONY: cs
 cs:
