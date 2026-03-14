@@ -3,12 +3,87 @@
 
 version = 1
 
+# Our own source code and assets
 [[annotations]]
-path = ["**/*.php", "**/*.js", "**/*.css", "**/*.xml", "**/*.json", "**/*.md"]
+path = [
+    "lib/AppInfo/**",
+    "lib/Command/**",
+    "lib/ConfigLexicon.php",
+    "lib/Controller/**",
+    "lib/Exceptions/**",
+    "lib/Model/**",
+    "lib/Platform/**",
+    "lib/Service/**",
+    "lib/Settings/**",
+    "lib/vendor_autoload.php",
+    "appinfo/**",
+    "css/**",
+    "js/**",
+    "templates/**",
+    "scoper.inc.php",
+    "img/**",
+]
 SPDX-FileCopyrightText = "2026 Felix Oertel"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
 
+# Project meta / config files
 [[annotations]]
-path = ["img/**"]
+path = [
+    "composer.json",
+    "composer.lock",
+    "Makefile",
+    ".gitignore",
+    "README.md",
+    "LICENSE",
+    "REUSE.toml",
+]
 SPDX-FileCopyrightText = "2026 Felix Oertel"
 SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+# Bundled third-party: opensearch-php (Apache-2.0)
+[[annotations]]
+path = "lib/Vendor/opensearch-project/**"
+SPDX-FileCopyrightText = "OpenSearch Contributors"
+SPDX-License-Identifier = "Apache-2.0"
+
+# Bundled third-party: ezimuel packages (MIT)
+[[annotations]]
+path = "lib/Vendor/ezimuel/**"
+SPDX-FileCopyrightText = "Enrico Zimuel"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: guzzlehttp packages (MIT)
+[[annotations]]
+path = "lib/Vendor/guzzlehttp/**"
+SPDX-FileCopyrightText = "GuzzleHTTP Contributors"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: php-http/discovery (MIT)
+[[annotations]]
+path = "lib/Vendor/php-http/**"
+SPDX-FileCopyrightText = "PHP-HTTP Contributors"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: PSR interfaces (MIT)
+[[annotations]]
+path = "lib/Vendor/psr/**"
+SPDX-FileCopyrightText = "PHP-FIG"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: ralouphie/getallheaders (MIT)
+[[annotations]]
+path = "lib/Vendor/ralouphie/**"
+SPDX-FileCopyrightText = "Ralph Khattar"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: react/promise (MIT)
+[[annotations]]
+path = "lib/Vendor/react/**"
+SPDX-FileCopyrightText = "ReactPHP Contributors"
+SPDX-License-Identifier = "MIT"
+
+# Bundled third-party: symfony packages (MIT)
+[[annotations]]
+path = "lib/Vendor/symfony/**"
+SPDX-FileCopyrightText = "Fabien Potencier"
+SPDX-License-Identifier = "MIT"
